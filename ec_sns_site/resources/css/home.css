@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #333;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/*wrapper*/
+.wrapper{
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/*header*/
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.title{
+    margin-right: auto;
+}
+
+.item{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/*footer*/
+footer{
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: cornflowerblue;
+    color: #fff;
+    text-align: center;
+}
+
+/*search*/
+#search{
+    text-align: center;
+}
+.search{
+    border: 1px solid cornflowerblue;
+}
+.click{
+    background-color:  cornflowerblue;
+}
+
+/*nav*/
+.nav2{
+    width:100%;
+}
+.nav2 ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav2 ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.nav2 ul li a{
+    display: block;
+    height: 20px;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border-left:1px soild white;
+}
+
+/*recommendation*/
+
+.recommendation{
+    display: flex;
+    justify-content: space-between;
+}
+.recommendation .goods{
+    width: 31%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.recommendation .goods .image{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.recommendation .goods .image image{
+    width: 100%;
+    text-align: center;
+}
+.recommendation .goods .title{
+    margin: 10px 0 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.recommendation .goods .price{
+    margin: 5px 0 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*SNS*/
+.word_of_mouth {
+    padding: 1px;
+    margin: 1px;
+    font-weight: bold;
+    color: cornflowerblue;/*文字色*/
+    background: #FFF;
+    border: double 5px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: 80%;
+}
+
+.word_of_mouth #word {
+    border:solid 2px ;
+    display:inline-block; 
+}
+
+.block{
+    border: 2px solid  gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tokumei{
+    width:100px;
+	height:100px;
+	object-fit:cover;
+	border-radius:30%;
+	object-position:-20px 0px;
+    color: black;
+    text-align: left;
+}
+
+.contributor{
+    color: black;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+.toukouphoto{
+    width: 100px;
+	height: 100px;
+}
+
+/*カート*/
+
+.button02 a {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: cornflowerblue;
+    border-radius: 50vh;
+  }
+  
+  .button02 a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+  }
+  
+  .button02 a:hover {
+    text-decoration: none;
+    background-color: gainsboro;
+  }
