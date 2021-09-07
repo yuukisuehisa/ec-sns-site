@@ -40,17 +40,17 @@
                     <p class="price">5,000円（込）</p>
                 </div>
                 <div class="goods">
-                    <figure class="image"><img src="shirt.png" alt="Tシャツ" width="193" height="130"/></figure>
+                    <figure class="image"><img src="./images/shirt.png" alt="Tシャツ" width="193" height="130"/></figure>
                     <p class="title">Tシャツ</p>
                     <p class="price">3,000円（込）</p>
                 </div>
                 <div class="goods">
-                    <figure class="image"><img src="jeans.jpeg" alt="ジーンズ" width="193" height="130"/></figure>
+                    <figure class="image"><img src="./images/jeans.jpeg" alt="ジーンズ" width="193" height="130"/></figure>
                     <p class="title">ジーンズ</p>
                     <p class="price">7,000円（込）</p>
                 </div>
                 <div class="goods">
-                    <figure class="image"><img src="wallet.jpeg" alt="財布" width="193" height="130"/></figure>
+                    <figure class="image"><img src="./images/wallet.jpeg" alt="財布" width="193" height="130"/></figure>
                     <p class="title">財布</p>
                     <p class="price">15,000円（込）</p>
                 </div>
@@ -59,22 +59,22 @@
             <h2>お気に入りリスト</h2>
             <div style="margin: 30px;" class="recommendation">
             <div class="goods">
-                <figure class="image"><img src="earphone.png" alt="イヤホン" width="193" height="130"/></figure>
+                <figure class="image"><img src="./images/earphone.png" alt="イヤホン" width="193" height="130"/></figure>
                 <p class="title">イヤホン</p>
                 <p class="price">15,000円（込）</p>
             </div>
             <div class="goods">
-                <figure class="image"><img src="sneaker1.png" alt="スニーカー" width="193" height="130"/></figure>
+                <figure class="image"><img src="./images/sneaker1.png" alt="スニーカー" width="193" height="130"/></figure>
                 <p class="title">スニーカー</p>
                 <p class="price">9,000円（込）</p>
             </div>
             <div class="goods">
-                <figure class="image"><img src="Rucksack.png" alt="リュックサック" width="193" height="130"/></figure>
+                <figure class="image"><img src="./images/Rucksack.png" alt="リュックサック" width="193" height="130"/></figure>
                 <p class="title">シュックサック</p>
                 <p class="price">4,000円（込）</p>
             </div>
             <div class="goods">
-                <figure class="image"><img src="clock.jpeg" alt="腕時計" width="193" height="130"/></figure>
+                <figure class="image"><img src="./images/clock.jpeg" alt="腕時計" width="193" height="130"/></figure>
                 <p class="title">時計</p>
                 <p class="price">15,000円（込）</p>
             </div>
@@ -83,26 +83,28 @@
         <h2>人気商品</h2>
         <div style="margin: 30px;" class="recommendation">
         <div class="goods">
-            <figure class="image"><img src="fan.jpeg" alt="扇風機" width="193" height="130"/></figure>
+            <figure class="image"><img src="./images/fan.jpeg" alt="扇風機" width="193" height="130"/></figure>
             <p class="title">第1位　扇風機</p>
             <p class="price">3,000円（込）</p>
         </div>
         <div class="goods">
-            <figure class="image"><img src="cap.png" alt="キャップ" width="193" height="130"/></figure>
+            <figure class="image"><img src="./images/cap.png" alt="キャップ" width="193" height="130"/></figure>
             <p class="title">第2位　キャップ</p>
             <p class="price">2,000円（込）</p>
         </div>
         <div class="goods">
-            <figure class="image"><img src="mask.jpeg" alt="マスク" width="193" height="130"/></figure>
+            <figure class="image"><img src="./images/mask.jpeg" alt="マスク" width="193" height="130"/></figure>
             <p class="title">第3位　マスク</p>
             <p class="price">4,000円（込）</p>
         </div>
         <div class="goods">
-            <figure class="image"><img src="clock.jpeg" alt="腕時計" width="193" height="130"/></figure>
+            <figure class="image"><img src="./images/clock.jpeg" alt="腕時計" width="193" height="130"/></figure>
             <p class="title">第4位 時計</p>
             <p class="price">15,000円（込）</p>
         </div>
     </div>
+
+    <button class="fixed_btn" style="font-size:25px;">カートへ</button>
 
     <h3>口コミ紹介</h3>
     <div class="word_of_mouth">
@@ -112,22 +114,22 @@
         <a href="#">口コミ投稿</a>
 
     <div style="margin: 30px;" class="block">
-        <figure class="image1"><img src="tokumei.png" alt="投稿者" class="tokumei"/></figure>
+        <div class="human">
+        <figure class="image1"><img src="./images/tokumei.png" alt="投稿者" class="tokumei"/></figure>
         <p style="margin: 5px;" class="contributor">ファッション大好きさん</p>
+        </div>
         <p class="sentence">このTシャツかっこよかったです。また買いたいと思います。</p>
-        <img src="Tshirt.jpeg" alt="投稿者" class="toukouphoto" />
+        <img src="./images/Tshirt.jpeg" alt="投稿者" class="toukouphoto" />
     </div>
    
     <div style="margin: 30px;"  class="block">
-        <figure class="image1"><img src="tokumei.png" alt="投稿者" class="tokumei"/></figure>
+        <div class="human">
+        <figure class="image1"><img src="./images/tokumei.png" alt="投稿者" class="tokumei"/></figure>
         <p class="contributor">おしゃれさん</p>
+        </div>
         <p class="sentence">この靴、履きやすいです。別の靴も買いたいです。</p>
-        <img src="kutu.png" alt="投稿者" class="toukouphoto"/>
+        <img src="./images/kutu.png" alt="投稿者" class="toukouphoto"/>
     </div>
-    </div>
-
-    <div class="button02" style="margin: 30px;">
-        <a href="">カートへ</a>
     </div>
 
     <footer>

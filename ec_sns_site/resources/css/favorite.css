@@ -81,55 +81,24 @@ footer{
     border-left:1px soild white;
 }
 
-/*recommendation*/
-
-.recommendation{
-    display: flex;
-    justify-content: space-between;
-}
-.recommendation .goods{
-    width: 31%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.recommendation .goods .image{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.recommendation .goods .image image{
-    width: 100%;
-    text-align: center;
-}
-.recommendation .goods .title{
-    margin: 10px 0 0;
-    padding: 0;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-.recommendation .goods .price{
-    margin: 5px 0 0;
-    padding: 0;
-    font-size: 16px;
+h2{
+    padding-top: 100px;
     text-align: center;
 }
 
-/*SNS*/
 .word_of_mouth {
     padding: 1px;
     margin: 1px;
     font-weight: bold;
-    color: cornflowerblue;/*文字色*/
+    color: black;/*文字色*/
     background: #FFF;
     border: double 5px #6091d3;/*線*/
     border-radius: 10px;/*角の丸み*/
-    width: 80%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
 }
-    
 
 .word_of_mouth #word {
     border:solid 2px ;
@@ -145,18 +114,15 @@ footer{
 .tokumei{
     width:100px;
 	height:100px;
-	-o-object-fit:cover;
-	   object-fit:cover;
+	object-fit:cover;
 	border-radius:30%;
-	-o-object-position:-20px 0px;
-	   object-position:-20px 0px;
+	object-position:-20px 0px;
     color: black;
     text-align: left;
 }
 
 .contributor{
     color: black;
-    font-size: 12px;
     text-align: left;
 }
 
@@ -166,16 +132,34 @@ footer{
 	height: 100px;
 }
 
-.human{
-    text-align: center;
+.select{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
-/*カート*/
-.fixed_btn{
-  position: fixed;
-  bottom: 75px; 
-  right: 10px;
-  padding: 6px 40px;
-  text-align: left;
-  background: red;
-  color: #fff;
+
+#sub {
+    box-sizing: border-box;
+    top: 26%;
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    overflow: auto;
+    background: #eee;
+    font-size: 15px;
+  }
+
+  h3{
+      text-align: center;
+  }
+
+/*footer*/
+footer{
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: cornflowerblue;
+    color: #fff;
+    text-align: center;
 }

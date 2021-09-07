@@ -81,101 +81,79 @@ footer{
     border-left:1px soild white;
 }
 
-/*recommendation*/
-
-.recommendation{
-    display: flex;
-    justify-content: space-between;
-}
-.recommendation .goods{
-    width: 31%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.recommendation .goods .image{
-    margin: 0;
-    padding: 0;
+/*cart*/
+h2{
     text-align: center;
+    padding-top: 100px;
 }
-.recommendation .goods .image image{
-    width: 100%;
-    text-align: center;
-}
-.recommendation .goods .title{
-    margin: 10px 0 0;
-    padding: 0;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-.recommendation .goods .price{
-    margin: 5px 0 0;
-    padding: 0;
-    font-size: 16px;
-    text-align: center;
-}
-
-/*SNS*/
-.word_of_mouth {
+.frame {
     padding: 1px;
     margin: 1px;
     font-weight: bold;
-    color: cornflowerblue;/*文字色*/
     background: #FFF;
     border: double 5px #6091d3;/*線*/
     border-radius: 10px;/*角の丸み*/
-    width: 80%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
-    
-
-.word_of_mouth #word {
-    border:solid 2px ;
-    display:inline-block; 
-}
 
 .block{
-    border: 2px solid  gray;
-    display: flex;
-    justify-content: left;
+  display  :flex;
+  text-align: left;
+  flex-direction:row;
+  align-items: flex-end;
 }
-
 .tokumei{
-    width:100px;
-	height:100px;
-	-o-object-fit:cover;
-	   object-fit:cover;
-	border-radius:30%;
-	-o-object-position:-20px 0px;
-	   object-position:-20px 0px;
-    color: black;
-    text-align: left;
-}
-
-.contributor{
-    color: black;
-    font-size: 12px;
-    text-align: left;
-}
-
-
-.toukouphoto{
     width: 100px;
-	height: 100px;
+    height: 100px;
 }
 
-.human{
+.category{
     text-align: center;
 }
-/*カート*/
-.fixed_btn{
-  position: fixed;
-  bottom: 75px; 
-  right: 10px;
-  padding: 6px 40px;
-  text-align: left;
-  background: red;
-  color: #fff;
+
+hr{
+    width: 80%;
 }
+
+.left{
+    text-align:left;
+    float:left;
+    font-size:18px;
+    padding:0;
+    margin:0;
+}  
+
+.right{
+    font-size:14px;
+    text-align:right;
+    padding:0;
+    margin:0;
+}
+
+
+
+.blank{
+    text-align: right;
+}
+
+.button{
+    text-align: center;
+}
+.cash{
+    background-color:paleturquoise;
+    color: black;
+}
+
+/*footer*/
+footer{
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: cornflowerblue;
+    color: #fff;
+    text-align: center;
+}
+
