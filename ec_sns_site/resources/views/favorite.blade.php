@@ -49,19 +49,20 @@
                 </div>
             </div>
            
-            <div style="margin: 30px;"  class="block">
-                <figure class="image1"><img src="kutu.png" alt="靴" class="tokumei"/></figure>
+            
+            @foreach ($data as $item)
+            <div style="margin: 30px;" class="block">
+                <figure class="image1"><img src="./images/{{ $item->image }}" alt="Tシャツ" class="tokumei"/></figure>
                 <div>
-                <p class="contributor"><a href="#">スニーカー</a></p>
-                <p class="sentence">8,000円（込）</p>
+                <p style="margin: 5px;" class="contributor"><a href="#">{{ $item->name }}</a></p>
+                <p class="sentence">{{ number_format($item->price + $item->tax) }}円（込）</p>
                 </div>
                 <div class="select">
                 <input type="submit" class="cart" style="font-size:25px;" value="カートへ入れる" >
                 <input type="submit" class="cart" style="font-size:25px;" value="削除する" >
                 </div>
-                </div>
             </div>
-            </div>
+            @endforeach
 
             <aside id="sub">
                 <h3>ファッション</h3>
