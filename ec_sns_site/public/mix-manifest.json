@@ -2,5 +2,14 @@
     "/js/app.js": "/js/app.js",
     "/js/bootstrap.js": "/js/bootstrap.js",
     "/css/home.css": "/css/home.css",
-    "/css/app.css": "/css/app.css"
+    "/css/favorite.css": "/css/favorite.css",
+    "/css/category.css": "/css/category.css",
+    "/css/cart.css": "/css/cart.css",
+    "/css/app.css": "/css/app.css",
+    "/css/signup.css": "/css/signup.css",
+    "/css/repurchase.css": "/css/repurchase.css",
+    "/css/news.css": "/css/news.css",
+    "/css/merchandise.css": "/css/merchandise.css",
+    "/css/member.css": "/css/member.css",
+    "/css/login.css": "/css/login.css"
 }

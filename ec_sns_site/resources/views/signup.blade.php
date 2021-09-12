@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
         <title>ECサイトのレイアウト</title>
-        <link rel="stylesheet" href="./css/layout_login.css">
+        <link rel="stylesheet" href="./css/signup.css">
     </head>
     <body>
         <h1 id="top">新規会員登録</h1>
