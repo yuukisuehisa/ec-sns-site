@@ -15,7 +15,6 @@ body{
 #frame{
     padding: 0px;
     margin: 50px;
-    background-color: cornflowerblue;
 }
 
 .item{
@@ -27,6 +26,7 @@ body{
 .item2{
     align-items: center;
 }
+
 
 
 

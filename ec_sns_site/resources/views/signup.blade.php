@@ -7,7 +7,17 @@
     </head>
     <body>
         <h1 id="top">新規会員登録</h1>
-        <from id="frame">
+        <form action="./signup/entry" method="POST" id"frame2">
+        @csrf
+        <div class="item">
+            <p>メールアドレス<span class="color">*</span></p><input type="text" id="mail" name="mail" style="width:200px; height:25px;"/></p>
+        </div>
+        <div class="item">
+            <p>パスワード<span class="color">*</span></p><input type="password" name="password" placeholder="パスワードを入力" style="width:200px; height:25px;"/></p>
+        </div>
+        <div class="item">
+            <p>パスワード(確認用)<span class="color">*</span></p><input type="password" name="password" placeholder="パスワードを入力" style="width:200px; height:25px;"/></p>
+        </div>
         <div class="item">
             <p>お名前<span class="color">*</span></p><input type="text" id="name" name="name" style="width:200px; height:25px;"/>
         </div>
@@ -37,15 +47,6 @@
         </div>
         <div class="item">
             <p>電話番号<span class="color">*</span></p><input type="text" id="tel" name="tel" style="width:200px; height:25px;" placeholder="ハイフンなし"/></p>
-        </div>
-        <div class="item">
-            <p>メールアドレス<span class="color">*</span></p><input type="text" id="mail" name="mail" style="width:200px; height:25px;"/></p>
-        </div>
-        <div class="item">
-            <p>パスワード<span class="color">*</span></p><input type="password" name="password" placeholder="パスワードを入力" style="width:200px; height:25px;"/></p>
-        </div>
-        <div class="item">
-            <p>パスワード(確認用)<span class="color">*</span></p><input type="password" name="password" placeholder="パスワードを入力" style="width:200px; height:25px;"/></p>
         </div>
         <div class="item">
             <input type="submit" class="click" value="登録"/>

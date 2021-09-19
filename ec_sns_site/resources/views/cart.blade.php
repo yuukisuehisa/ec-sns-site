@@ -11,6 +11,7 @@
                 <h1 class="title">ECサイト</h1>
                 <nav class="nav1">
                     <ul>
+                        <li class="item"><a href="#">ログイン</a></li>
                         <li class="item"><a href="#">会員情報</a></li>
                         <li class="item"><a href="#">投稿</a></li>
                     </ul>

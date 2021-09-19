@@ -33,5 +33,5 @@ Route::get("/cart", [CartController::class, "index"])->name("cart.index");
 Route::get("/category", [CategoryController::class, "index"])->name("category.index");
 Route::get("/repurchase", [RepurchaseController::class, "index"])->name("repurchase.index");
 Route::get("/news", [NewsController::class, "index"])->name("news.index");
-
+Route::post("/signup/entry", [SignupController::class, "entry"])->name("entry.index");
 
