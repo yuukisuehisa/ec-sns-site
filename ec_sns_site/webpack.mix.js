@@ -17,7 +17,11 @@ const glob = require('glob');
 });
 
 glob.sync('resources/js/*.js').map(function(file) {
-    mix.js(file, 'public/js');
+    mix.js(file, 'public/js')
+    .sourceMaps()
+    .autoload({
+        "jquery":['$','window.jQuery'],
+    });
 });
 // mix.js('resources/js/app.js', 'public/js')
 //     .postCss('resources/css/app.css', 'public/css', [

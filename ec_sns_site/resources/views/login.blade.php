@@ -10,11 +10,11 @@
             <form action="/login/entry" id ="frame">
             <div id = "id">
                 <p class="text">メールアドレス</p>
-                <input type="text" id="box1" name="" style="width:250px; height:25px;"/>
+                <input type="text" id="box1" name="" style="width:250px; height:25px;"/><p id="mailerror"></p>
             </div>
             <div id = "pass">
                 <p class="text">パスワード</p>
-                <input type="text" id="box2"  name="" style="width:250px; height:25px;"/>
+                <input type="text" id="box2"  name="" style="width:250px; height:25px;"/><p id="passworderror"></p>
             </div>
             <div id = "button">
                 <input type="button" class="click" value="ログイン" onclick="clickLogin()" style="font-size:15px;">
