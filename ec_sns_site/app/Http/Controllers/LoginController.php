@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\login;
 use Illuminate\Support\Facades\Validator;
+use App\Models\User;
 
 
 class LoginController extends Controller
@@ -28,15 +29,12 @@ class LoginController extends Controller
         }
 
         $data = User::where("mailaddress", $r->input("mail")) ->get();
-        if($data != null && count($data) > 0){
+        if($data == null || count($data) == 0){
             $res["success"]=false;
             $res["error"]["mail"]="すでに登録されているメールアドレスです";
             return response()->json($res,400);
         }
-        Login::create(["mailaddress"=>$r->input("box1"),
-                       "password"=>$r->input("box2"),
-                       "created_at"=>now(),
-                       "updated_at"=>now()]);
+
 
                        return view("login");
     }
