@@ -12,7 +12,7 @@ class LoginController extends Controller
     {
         return view("login");
     }
-    public function entry(Request $r)
+    public function check(Request $r)
     {
         $res["success"]=true;
         $validator=Validator::make($r->all(),[
@@ -31,11 +31,19 @@ class LoginController extends Controller
         $data = User::where("mailaddress", $r->input("mail")) ->get();
         if($data == null || count($data) == 0){
             $res["success"]=false;
-            $res["error"]["mail"]="すでに登録されているメールアドレスです";
+            $res["error"]["mail"]="メールアドレスまたは、パスワードが不正です";
             return response()->json($res,400);
         }
+        if($data[0]->password!=$r->input("password")){
+            $res["success"]=false;
+            $res["error"]["mail"]="メールアドレスまたは、パスワードが不正です";
+            return response()->json($res,400);
+        }
+        session()->put("userid",$data[0]->id);
+        session()->put("username",$data[0]->name);
 
 
-                       return view("login");
+            //return view("login");
+            return response()->json($res);
     }
 }

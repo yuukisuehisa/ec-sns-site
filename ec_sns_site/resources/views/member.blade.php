@@ -10,31 +10,31 @@
 
         <table border="1">
             <tr>
-              <td class="item">お名前</td><td>田中太郎<input type="button" value="変更"　class="change/"></td>
+              <td class="item">お名前</td><td>{{$data->name}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-              <td class="item">フリガナ</td><td>タナカタロウ<input type="button" value="変更"　class="change style="text-align: right;"/></td>
+              <td class="item">フリガナ</td><td>{{$data->name_kana}}</td><td><input type="button" value="変更"　class="change style="text-align: right;"/></td>
             </tr>
             <tr>
-                <td class="item">性別</td><td>男性<input type="button" value="変更"　class="change/"></td>
+                <td class="item">性別</td><td>{{$data->seibetu}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-                <td class="item">生年月日</td><td>2000年1月1日<input type="button" value="変更"　class="change/"></td>
+                <td class="item">生年月日</td><td>{{date("Y年m月d日",strtotime($data->seinengappi))}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-                <td class="item">郵便番号</td><td>0000000<input type="button" value="変更"　class="change/"></td>
+                <td class="item">郵便番号</td><td>{{$data->code}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-                <td class="item">住所</td><td>福岡県福岡市博多区◯1丁目1-1<input type="button" value="変更"　class="change/"></td>
+                <td class="item">住所</td><td>{{$data->address}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-                <td class="item">電話番号</td><td>09012345678<input type="button" value="変更"　class="change/"></td>
+                <td class="item">電話番号</td><td>{{$data->phonenumber}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
               <tr>
-                <td class="item">メールアドレス</td><td>abc@gmail.com<input type="button" value="変更"　class="change/"></td>
+                <td class="item">メールアドレス</td><td>{{$data->mailaddress}}</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
             <tr>
-                <td class="item">パスワード</td><td>*******<input type="button" value="変更"　class="change/"></td>
+                <td class="item">パスワード</td><td>******</td><td><input type="button" value="変更"　class="change/"></td>
             </tr>
           </table>
           

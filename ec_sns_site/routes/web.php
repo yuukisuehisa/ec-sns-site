@@ -24,6 +24,7 @@ use App\Http\Controllers\RepurchaseController;
 */
 
 Route::get("/", [HomeController::class, "index"])->name("home.index");
+Route::get("/logout", [HomeController::class, "logout"])->name("logout.index");
 Route::get("/signup", [SignupController::class, "index"])->name("sign.index");
 Route::get("/login", [LoginController::class, "index"])->name("login.index");
 Route::get("/member", [MemberController::class, "index"])->name("member.index");
@@ -34,4 +35,5 @@ Route::get("/category", [CategoryController::class, "index"])->name("category.in
 Route::get("/repurchase", [RepurchaseController::class, "index"])->name("repurchase.index");
 Route::get("/news", [NewsController::class, "index"])->name("news.index");
 Route::post("/signup/entry", [SignupController::class, "entry"])->name("entry.index");
+Route::post("/login/check", [LoginController::class, "check"])->name("check.index");
 

@@ -4,20 +4,21 @@
         <meta charset="UTF-8">
         <title>ログイン</title>
         <link rel="stylesheet" href="./css/login.css">
+        <script src="js/login.js"></script>
     </head>
         <body>
             <h1>ログイン画面</h1>
             <form action="/login/entry" id ="frame">
             <div id = "id">
                 <p class="text">メールアドレス</p>
-                <input type="text" id="box1" name="" style="width:250px; height:25px;"/><p id="mailerror"></p>
+                <input type="text" id="mail" name="mail" style="width:250px; height:25px;"/><p id="mailerror"></p>
             </div>
             <div id = "pass">
                 <p class="text">パスワード</p>
-                <input type="text" id="box2"  name="" style="width:250px; height:25px;"/><p id="passworderror"></p>
+                <input type="password" id="password"  name="password" style="width:250px; height:25px;"/><p id="passworderror"></p>
             </div>
             <div id = "button">
-                <input type="button" class="click" value="ログイン" onclick="clickLogin()" style="font-size:15px;">
+                <input type="button" id="login" value="ログイン"  style="font-size:15px;">
                 <p id="label" style="color: #c90505;"></p>
             </div>
             <hr>

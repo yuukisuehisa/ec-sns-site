@@ -10,9 +10,18 @@
             <h1 class="title">ECサイト</h1>
             <nav class="nav1">
                 <ul>
-                <li class="item"><a href="#">ログイン</a></li>
-                    <li class="item"><a href="#">会員情報</a></li>
-                    <li class="item"><a href="#">投稿</a></li>
+                    <li class="item">こんにちは！
+                        @if(session()->exists("userid"))
+                       {{session()->get("username")}} さん
+                        @endif
+                    </li>
+                        @if(session()->exists("userid"))
+                        <li class="item"><a href="./logout">ログアウト</a></li>
+                        <li class="item"><a href="./member">会員情報</a></li>
+                        <li class="item"><a href="#">投稿</a></li>
+                        @else
+                        <li class="item"><a href="./login">ログイン</a></li>
+                        @endif
                 </ul>
             </nav>
         </header>
